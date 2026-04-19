@@ -1,0 +1,42 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: toliveby
+      POSTGRES_PASSWORD: toliveby
+      POSTGRES_DB: toliveby
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U toliveby -d toliveby"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build:
+      context: ./services/api
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: postgresql://toliveby:toliveby@db:5432/toliveby
+      ADMIN_API_KEY: ${ADMIN_API_KEY:-toliveby-dev-admin-change-me}
+      CORS_ORIGINS: "*"
+      PORT: "3000"
+      HOST: "0.0.0.0"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  admin:
+    build:
+      context: ./services/admin
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+
+volumes:
+  pgdata:

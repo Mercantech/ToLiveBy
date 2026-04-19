@@ -1,0 +1,25 @@
+{
+  "name": "@toliveby/overlay",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.main.json && npm run build:preload && npm run build:renderer",
+    "build:preload": "esbuild src/preload.ts --bundle --platform=node --format=cjs --external:electron --outfile=dist/preload.cjs",
+    "build:renderer": "esbuild src/renderer/ui.ts --bundle --outfile=dist/renderer/ui.js --platform=browser --format=iife",
+    "copy:html": "node scripts/copy-html.mjs",
+    "prestart": "npm run build && npm run copy:html",
+    "start": "electron .",
+    "dev": "npm run build && npm run copy:html && electron ."
+  },
+  "dependencies": {
+    "@toliveby/api-client": "file:../../packages/api-client",
+    "electron": "^34.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "esbuild": "^0.24.2",
+    "typescript": "^5.7.2"
+  }
+}

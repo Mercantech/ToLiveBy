@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToLiveBy</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="chrome">
+      <div class="drag" id="drag">ToLiveBy</div>
+      <div class="chrome-actions">
+        <button
+          type="button"
+          class="ghost"
+          id="btnToggleMode"
+          title="Skift mellem simpel og kompleks visning"
+          aria-label="Skift visning"
+        >
+          ⇄
+        </button>
+        <button
+          type="button"
+          class="ghost ghost-ny"
+          id="btnSimpleRefresh"
+          title="Nyt citat"
+          aria-label="Nyt citat"
+        >
+          Ny
+        </button>
+        <button type="button" class="ghost" id="btnSettings" aria-label="Indstillinger">⚙</button>
+        <button type="button" class="ghost" id="btnMinimize" aria-label="Minimer">—</button>
+        <button type="button" class="ghost" id="btnClose" aria-label="Luk">×</button>
+      </div>
+    </div>
+
+    <div class="shell shell-complex" id="shellComplex">
+      <div class="mascot" aria-hidden="true">
+        <svg viewBox="0 0 120 120" class="mascot-svg" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#7dd3fc" />
+              <stop offset="1" stop-color="#6366f1" />
+            </linearGradient>
+          </defs>
+          <circle cx="60" cy="64" r="44" fill="url(#g)" />
+          <ellipse cx="46" cy="58" rx="6" ry="8" fill="#0b1220" />
+          <ellipse cx="74" cy="58" rx="6" ry="8" fill="#0b1220" />
+          <path d="M48 78 C56 86 64 86 72 78" fill="none" stroke="#0b1220" stroke-width="4" stroke-linecap="round" />
+          <circle cx="60" cy="26" r="8" fill="#fbbf24" />
+        </svg>
+      </div>
+
+      <div class="bubble">
+        <div id="quoteText" class="quote">Henter et godt råd…</div>
+        <div id="quoteAuthor" class="quote-author" hidden></div>
+        <div id="quoteMeta" class="meta"></div>
+        <div class="toolbar">
+          <button type="button" id="btnRefresh" class="primary">Ny ToLiveBy</button>
+          <button type="button" id="btnRandom" class="secondary">Surprise</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="shell shell-simple" id="shellSimple" hidden>
+      <div class="simple-inner">
+        <div id="simpleQuote" class="simple-quote">Henter…</div>
+        <div id="simpleAuthor" class="simple-author" hidden></div>
+      </div>
+    </div>
+
+    <dialog id="dlg" class="dlg">
+      <form method="dialog" class="dlg-body">
+        <h2 class="dlg-title">Indstillinger</h2>
+        <label class="field">
+          API base URL
+          <input id="apiUrl" type="url" autocomplete="off" />
+        </label>
+        <label class="field">
+          Auto-ny hvert (sekunder, 0 = slå fra)
+          <input id="pollSec" type="number" min="0" step="1" />
+        </label>
+        <label class="field">
+          Visning
+          <select id="displayMode">
+            <option value="simple">Simpel — kun ToLiveBy og citat</option>
+            <option value="complex">Kompleks — ven og boble</option>
+          </select>
+        </label>
+        <div class="dlg-actions">
+          <button type="button" class="primary" id="dlgSave">Gem</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="./ui.js"></script>
+  </body>
+</html>

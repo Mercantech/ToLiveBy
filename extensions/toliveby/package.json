@@ -1,0 +1,45 @@
+{
+  "name": "toliveby",
+  "displayName": "ToLiveBy",
+  "description": "Motivation og stoicisme fra din ToLiveBy API.",
+  "version": "0.1.0",
+  "publisher": "toliveby",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onCommand:toliveby.randomQuote", "onCommand:toliveby.randomQuoteCategory"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "toliveby.randomQuote",
+        "title": "ToLiveBy: Tilfældigt citat"
+      },
+      {
+        "command": "toliveby.randomQuoteCategory",
+        "title": "ToLiveBy: Citat efter kategori"
+      }
+    ],
+    "configuration": {
+      "title": "ToLiveBy",
+      "properties": {
+        "toliveby.apiBaseUrl": {
+          "type": "string",
+          "default": "http://localhost:3000",
+          "description": "Base URL til ToLiveBy API (uden afsluttende slash)."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.7.2"
+  }
+}

@@ -1,0 +1,234 @@
+:root {
+  color-scheme: dark;
+  font-family: system-ui, Segoe UI, Roboto, sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: rgba(16, 18, 28, 0.92);
+  color: #e8eaf3;
+  overflow: hidden;
+}
+
+body {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+}
+
+body[data-display-mode="simple"] {
+  border-radius: 12px;
+}
+
+.chrome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 10px 6px;
+  user-select: none;
+  min-width: 0;
+}
+
+.drag {
+  -webkit-app-region: drag;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  opacity: 0.8;
+  padding-left: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.chrome-actions {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: nowrap;
+  -webkit-app-region: no-drag;
+}
+
+#btnSimpleRefresh {
+  display: none;
+}
+
+body[data-display-mode="simple"] #btnSimpleRefresh {
+  display: inline-flex;
+  align-items: center;
+}
+
+.ghost-ny {
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+button {
+  font: inherit;
+}
+
+.ghost {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: inherit;
+  border-radius: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.shell {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 10px;
+  padding: 10px 12px 14px;
+  align-items: start;
+}
+
+.mascot {
+  width: 112px;
+  height: 112px;
+}
+
+.mascot-svg {
+  width: 112px;
+  height: 112px;
+  filter: drop-shadow(0 12px 22px rgba(0, 0, 0, 0.35));
+}
+
+.bubble {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.quote {
+  font-size: 14px;
+  line-height: 1.45;
+  min-height: 3.2rem;
+}
+
+.quote-author {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.35;
+  color: rgba(180, 186, 202, 0.88);
+}
+
+.meta {
+  margin-top: 10px;
+  font-size: 12px;
+  color: rgba(232, 234, 243, 0.62);
+}
+
+.toolbar {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.primary,
+.secondary {
+  border-radius: 12px;
+  padding: 8px 10px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.primary {
+  background: linear-gradient(#334bad, #273384);
+  color: #fff;
+}
+
+.secondary {
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+}
+
+.dlg {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  background: #141827;
+  color: #e8eaf3;
+  padding: 0;
+  width: min(520px, 92vw);
+}
+
+.dlg::backdrop {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.dlg-body {
+  padding: 14px;
+}
+
+.dlg-title {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+  margin: 10px 0;
+  font-size: 12px;
+  color: rgba(232, 234, 243, 0.72);
+}
+
+.field input {
+  font: inherit;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+
+.dlg-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+.shell-complex.is-view-hidden,
+.shell-simple.is-view-hidden {
+  display: none !important;
+}
+
+/* Fuld bredde i simpel visning — ikke arv .shell sit 112px + 1fr grid */
+.shell.shell-simple {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 12px 10px;
+  min-height: 0;
+}
+
+.simple-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.simple-author {
+  font-size: 12px;
+  line-height: 1.35;
+  color: rgba(180, 186, 202, 0.88);
+}
+
+.simple-quote {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-size: clamp(13px, min(2.6vmin, 2.8vw), 20px);
+  line-height: 1.42;
+  min-height: 2.6rem;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}

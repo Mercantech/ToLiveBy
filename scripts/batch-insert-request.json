@@ -1,0 +1,214 @@
+{
+  "quotes": [
+    {
+      "body": "Discipline is doing the boring thing today so your future self can live an interesting life.",
+      "author": null,
+      "category": "discipline",
+      "tags": ["discipline", "future", "selfrespect"],
+      "isActive": true
+    },
+    {
+      "body": "Motivation is a spark; discipline is the habit of lighting the match every single day.",
+      "author": null,
+      "category": "discipline",
+      "tags": ["discipline", "habit", "consistency"],
+      "isActive": true
+    },
+    {
+      "body": "Small disciplined choices, repeated quietly in private, become the loudest results in public.",
+      "author": null,
+      "category": "discipline",
+      "tags": ["discipline", "choices", "results"],
+      "isActive": true
+    },
+    {
+      "body": "You will never always feel like it, but you can always choose to show up anyway.",
+      "author": null,
+      "category": "discipline",
+      "tags": ["discipline", "showup", "choice"],
+      "isActive": true
+    },
+    {
+      "body": "Discipline is how you respect your future, not how you punish your present.",
+      "author": null,
+      "category": "discipline",
+      "tags": ["discipline", "future", "respect"],
+      "isActive": true
+    },
+    {
+      "body": "Your goals do not care how you feel today; they only care what you actually do.",
+      "author": null,
+      "category": "discipline",
+      "tags": ["discipline", "goals", "action"],
+      "isActive": true
+    },
+    {
+      "body": "Every time you keep a promise to yourself, you train your mind to trust you.",
+      "author": null,
+      "category": "discipline",
+      "tags": ["discipline", "selftrust", "integrity"],
+      "isActive": true
+    },
+    {
+      "body": "You do not rise to the level of your goals; you fall to the level of your daily discipline.",
+      "author": null,
+      "category": "discipline",
+      "tags": ["discipline", "daily", "habits"],
+      "isActive": true
+    },
+    {
+      "body": "The difference between wishing and changing is usually thirty minutes of focused work.",
+      "author": null,
+      "category": "discipline",
+      "tags": ["discipline", "focus", "work"],
+      "isActive": true
+    },
+    {
+      "body": "Discipline is choosing the discomfort that builds you over the comfort that slowly weakens you.",
+      "author": null,
+      "category": "discipline",
+      "tags": ["discipline", "growth", "comfortzone"],
+      "isActive": true
+    },
+    {
+      "body": "Motivation gets you moving once; identity keeps you moving every day.",
+      "author": null,
+      "category": "motivation",
+      "tags": ["motivation", "identity", "consistency"],
+      "isActive": true
+    },
+    {
+      "body": "You do not need a lighter load, you need a stronger mindset and a clearer reason.",
+      "author": null,
+      "category": "motivation",
+      "tags": ["motivation", "mindset", "purpose"],
+      "isActive": true
+    },
+    {
+      "body": "Start where you are, use what you have, move one honest step forward today.",
+      "author": null,
+      "category": "motivation",
+      "tags": ["motivation", "start", "progress"],
+      "isActive": true
+    },
+    {
+      "body": "Your future is built in unremarkable moments that no one sees and you do anyway.",
+      "author": null,
+      "category": "motivation",
+      "tags": ["motivation", "future", "moments"],
+      "isActive": true
+    },
+    {
+      "body": "You are always one disciplined week away from feeling like a different person.",
+      "author": null,
+      "category": "motivation",
+      "tags": ["motivation", "discipline", "week"],
+      "isActive": true
+    },
+    {
+      "body": "Stop negotiating with your excuses; they have never once delivered the life you want.",
+      "author": null,
+      "category": "motivation",
+      "tags": ["motivation", "excuses", "responsibility"],
+      "isActive": true
+    },
+    {
+      "body": "Do not wait to feel confident; act with courage and let confidence catch up.",
+      "author": null,
+      "category": "motivation",
+      "tags": ["motivation", "courage", "confidence"],
+      "isActive": true
+    },
+    {
+      "body": "Your habits are votes for the person you are becoming; cast them on purpose.",
+      "author": null,
+      "category": "motivation",
+      "tags": ["motivation", "habits", "identity"],
+      "isActive": true
+    },
+    {
+      "body": "Progress is rarely loud; it sounds like repetition, routine, and showing up again.",
+      "author": null,
+      "category": "motivation",
+      "tags": ["motivation", "progress", "routine"],
+      "isActive": true
+    },
+    {
+      "body": "You are not behind; you are exactly where your daily decisions have carried you.",
+      "author": null,
+      "category": "motivation",
+      "tags": ["motivation", "ownership", "decisions"],
+      "isActive": true
+    },
+    {
+      "body": "You control your judgment, your effort, and your response; the rest is not truly yours.",
+      "author": null,
+      "category": "stoicism",
+      "tags": ["stoicism", "control", "mindset"],
+      "isActive": true
+    },
+    {
+      "body": "Do not argue with reality; cooperate with it and use your energy to choose your next move.",
+      "author": null,
+      "category": "stoicism",
+      "tags": ["stoicism", "reality", "action"],
+      "isActive": true
+    },
+    {
+      "body": "Hard moments are training, not punishment; life is strengthening what it expects you to use.",
+      "author": null,
+      "category": "stoicism",
+      "tags": ["stoicism", "adversity", "growth"],
+      "isActive": true
+    },
+    {
+      "body": "You suffer twice when you resist what is and complain about what you chose.",
+      "author": null,
+      "category": "stoicism",
+      "tags": ["stoicism", "acceptance", "suffering"],
+      "isActive": true
+    },
+    {
+      "body": "Measure your days not by what happened to you, but by how you chose to respond.",
+      "author": null,
+      "category": "stoicism",
+      "tags": ["stoicism", "response", "choice"],
+      "isActive": true
+    },
+    {
+      "body": "A meaningful life is rarely comfortable and a comfortable life is rarely meaningful.",
+      "author": null,
+      "category": "general",
+      "tags": ["meaning", "comfort", "life"],
+      "isActive": true
+    },
+    {
+      "body": "Clarity turns anxiety into action; name what you want and the next step becomes visible.",
+      "author": null,
+      "category": "general",
+      "tags": ["clarity", "action", "anxiety"],
+      "isActive": true
+    },
+    {
+      "body": "You will outgrow some versions of yourself; do not let nostalgia chain you to them.",
+      "author": null,
+      "category": "general",
+      "tags": ["growth", "identity", "change"],
+      "isActive": true
+    },
+    {
+      "body": "Rest is not laziness; it is maintenance for the machine that does the hard things.",
+      "author": null,
+      "category": "general",
+      "tags": ["rest", "energy", "sustainability"],
+      "isActive": true
+    },
+    {
+      "body": "The life you want is hidden inside the habits you keep repeating when nobody is watching.",
+      "author": null,
+      "category": "general",
+      "tags": ["habits", "life", "integrity"],
+      "isActive": true
+    }
+  ]
+}
